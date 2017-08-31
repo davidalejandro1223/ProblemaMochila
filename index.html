@@ -7,7 +7,19 @@
 </head>
 <body>
 	<div class="container">
-		
+		<div class="entradaDatos">
+			<label>Peso limite de la mochila  <input type="text" id="PesoLim"></label><br>
+			<label>Numero de articulos <input type="text" id="numArticulos"></label><br>
+			<input type="button" id="IngresoArt" onclick="CrearEspacios()" value="Abrir campos">
+			<div id="entradaPeso">
+				<h4 class="lblEntrada">Ingrese el peso de los articulos</h4>
+			</div>
+			<div id="entradaValor">
+				<h4 class="lblEntrada">Ingrese el valor de los articulos</h4>
+			</div>		
+		</div>
+		<input type="button" id="Resolver" value="Resolver problema de la mochila" onclick="Resolver()">
+		<div id="solucion"></div>
 	</div>
 </body>
 </html>
